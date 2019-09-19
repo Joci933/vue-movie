@@ -1,8 +1,16 @@
-# vue-new
+# Vue movie
+
+# .env example
+```
+VUE_APP_MOVIE_DB_KEY=moviedbapikey
+VUE_APP_MOVE_API_URL=https://api.themoviedb.org/3/
+VUE_APP_MOVIE_API_LANG=hu-HU
+```
 
 ## Project setup
 ```
 npm install
+create .env file in root folder
 ```
 
 ### Compiles and hot-reloads for development
