@@ -14,9 +14,14 @@ export default new Router({
       component: Home,
     },
     {
-      path: '/about',
-      name: 'about',
-      component: () => import('./views/About.vue'),
+      path: '/top-rated',
+      name: 'top-rated',
+      component: () => import('./views/TopRated.vue'),
+    },
+    {
+      path: '/upcoming',
+      name: 'upcoming',
+      component: () => import('./views/Upcoming.vue'),
     },
     {
       path: '/movie/:slug',
