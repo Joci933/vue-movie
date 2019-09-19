@@ -9,7 +9,7 @@
 
   <div class="content">
     <h2 class="name">
-      <router-link class="trailer-preview" :to="{ name : 'movie', params: { id: cardDetail.id, slug:encodeURL(cardDetail.title) }}">
+      <router-link class="trailer-preview" :to="{ name : 'movie', params: { id: cardDetail.id, slug:encodeURL(cardDetail.title)}, query:{mg:cardDetail.id}}">
         {{cardDetail.title}}
       </router-link>
     </h2>

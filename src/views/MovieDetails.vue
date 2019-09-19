@@ -78,7 +78,7 @@
 <script>
 export default {
   mounted() {
-    fetch(`${process.env.VUE_APP_MOVE_API_URL}movie/${this.$route.params.id}?api_key=${process.env.VUE_APP_MOVIE_DB_KEY}&language=${process.env.VUE_APP_MOVIE_API_LANG}`)
+    fetch(`${process.env.VUE_APP_MOVE_API_URL}movie/${this.$route.query.mg}?api_key=${process.env.VUE_APP_MOVIE_DB_KEY}&language=${process.env.VUE_APP_MOVIE_API_LANG}`)
       .then(el => el.json())
       .then(result => {
         this.post = result;
