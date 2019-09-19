@@ -1,0 +1,221 @@
+.single-top-movie {
+  position: relative;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  z-index: 7;
+  width: 262.5px;
+  margin-right: 20px;
+}
+
+.movieCardWrapper{
+  margin-top:90px;
+}
+
+.single-top-movie::before {
+  background-image: -webkit-linear-gradient( -90deg, rgba(255, 255, 255, .0) 0%, rgb(2, 2, 2) 66%);
+  content: "";
+  height: 100%;
+  left: 0;
+  opacity: 0.8;
+  position: absolute;
+  top: 0;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  width: 100%;
+  z-index: 0;
+}
+
+.single-top-movie:hover::before {
+  opacity: 0;
+}
+
+.single-top-movie::after {
+  background-image: -webkit-linear-gradient( -90deg, rgba(255, 23, 68, 0.6) 0%, rgb(2, 2, 2) 66%);
+  content: "";
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  width: 100%;
+  z-index: 0;
+}
+
+.single-top-movie:hover::after {
+  opacity: 0.75;
+}
+
+.single-top-movie .img a {
+  display: block;
+}
+
+
+.single-top-movie .view-counter {
+  color: #ff9700;
+  display: block;
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: 16px;
+  position: absolute;
+  right: 18px;
+  top: 10px;
+  z-index: 8;
+}
+
+.single-top-movie:hover .view-counter {
+  color: #fff;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.single-top-movie .popup-youtube {
+  background: rgba(255, 255, 255, 0.5) none repeat scroll 0 0;
+  border-radius: 100%;
+  font-size: 48px;
+  height: 56px;
+  left: 50%;
+  line-height: 58px;
+  opacity: 0;
+  position: absolute;
+  text-align: center;
+  top: 28%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 56px;
+  z-index: 8;
+}
+
+.single-top-movie .popup-youtube::before {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: popyou;
+  animation-name: popyou;
+  border: 1px solid #ffffff;
+  border-radius: 100px;
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+@-webkit-keyframes popyou {
+  0% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+  }
+  99% {
+      -webkit-transform: scale(1.5);
+      transform: scale(1.5);
+  }
+  100% {
+      opacity: 0;
+  }
+}
+
+@keyframes popyou {
+  0% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+  }
+  99% {
+      -webkit-transform: scale(1.5);
+      transform: scale(1.5);
+  }
+  100% {
+      opacity: 0;
+  }
+}
+
+.single-top-movie:hover .popup-youtube {
+  color: #ffffff;
+  opacity: 1;
+}
+
+.single-top-movie .content {
+  bottom: 31px;
+  left: 0;
+  padding: 0 20px;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  z-index: 8;
+}
+
+.single-top-movie .content .name,
+.single-top-movie .content .name a {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28px;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.single-top-movie .content .name {
+  margin: 0 0 2px;
+}
+
+.single-top-movie .content .name a {
+  display: block;
+}
+
+.single-top-movie .content .rating .star {
+  cursor: pointer;
+  display: inline-block;
+  font-size: 13px;
+  font-weight: normal;
+  height: 22px;
+  margin: 0 1px 0 0;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  top: 0;
+  width: 14px;
+}
+
+
+
+.single-top-movie .content .rating .fa-star {
+  color: #ff9700;
+}
+
+
+
+.single-top-movie .content .rating .star:hover::after {
+  color: #ff9700;
+}
+
+.single-top-movie .content .date {
+  line-height: 18px;
+  margin: 0 0 -38px;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+
+.single-top-movie:hover .content .date {
+  margin: 0 0 27px;
+}
+
+.single-top-movie .content .duration {
+  border: 1px solid #ff1744;
+  border-radius: 25px;
+  display: inline-block;
+  font-weight: 300;
+  padding: 3px 30px;
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+  -webkit-transform-origin: center bottom 0;
+  transform-origin: center bottom 0;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+
+.single-top-movie:hover .content .duration {
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
+}

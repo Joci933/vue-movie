@@ -1,0 +1,173 @@
+/* Details */
+
+.details-area {
+  padding: 41px 0 30px;
+  text-align:left;
+}
+
+.details {}
+
+.details-movie {
+  border-right: 1px solid #252438;
+  float: left;
+  margin: 0 40px 14px 0;
+  overflow: auto;
+  width: 556px;
+}
+
+.details-movie .img {
+  float: left;
+  width: 268px;
+  text-align: center;
+}
+
+
+
+.details-movie .content {
+  overflow: hidden;
+  padding: 53px 0 0 32px;
+}
+
+.details-movie .content .name {
+  color: #ff1744;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28px;
+  margin: 0 0 4px;
+}
+
+.details-movie .content .reviews {
+  margin: 0 0 17px;
+  overflow: visible;
+}
+
+.details-movie .content .reviews .rating {
+  display: inline-block;
+}
+
+.details-movie .content .reviews .rating .star {
+  cursor: pointer;
+  display: inline-block;
+  font-size: 13px;
+  font-weight: normal;
+  height: 22px;
+  margin: 0 1px 0 0;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  top: 0;
+  width: 14px;
+}
+
+.details-movie .content .reviews .rating .star::after {
+  color: #ff9700;
+  content: "ï€…";
+  display: inline-block;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+.details-movie .content .reviews .rating.star-on::after {
+  color: #ff9700;
+  content: "ï€…";
+  display: inline-block;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+.details-movie .content .reviews .rating .star-half::after {
+  color: #ff9700;
+  content: "ï‚‰";
+  display: inline-block;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+.details-movie .content .reviews .rating .star:hover::after {
+  color: #ff9700;
+}
+
+.details-movie .content .reviews .review {
+  display: inline-block;
+  font-weight: 300;
+  line-height: 18px;
+}
+
+.details-movie .content .info {
+  list-style: outside none none;
+  margin: 0 0 15px;
+  padding: 0;
+}
+
+.details-movie .content .info li {
+  display: block;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 24px;
+}
+
+.details-movie .content .share {
+  margin: 0 0 32px;
+}
+
+.details-movie .content .share .label {
+  color: #ff1744;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 18px;
+  margin-right: 10px;
+  text-transform: uppercase;
+}
+
+.details-movie .content .share .social {
+  display: inline-block;
+  list-style: outside none none;
+  padding: 0;
+}
+
+.details-movie .content .share .social li {
+  display: inline-block;
+}
+
+.details-movie .content .share .social li a {
+  display: block;
+  margin-right: 3px;
+}
+
+.details-movie .content .share .social li.facebook a {
+  color: #4065ae;
+}
+
+.details-movie .content .share .social li.twitter a {
+  color: #1da1f2;
+}
+
+.details-movie .content .share .social li.instagram a {
+  color: #a32e73;
+}
+
+.details-movie .content .share .social li.pinterest a {
+  color: #d50c22;
+}
+
+.details-movie .content .share .social li.vimeo a {
+  color: #ffa800;
+}
+
+.details-movie .content .all {
+  background: #ff1744 none repeat scroll 0 0;
+  border-radius: 25px;
+  color: #fff;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 24px;
+  padding: 4px 21px;
+}
+
+.details-content {
+  overflow: unset;
+}
